@@ -147,7 +147,7 @@ fun Middle(todo : List<Todos>, viewModel: ToggleViewModel) {
 
             Spacer(Modifier.width(10.dp))
 
-            Text("SHOW LIST",
+            Text("SHOW_LIST",
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Black)
