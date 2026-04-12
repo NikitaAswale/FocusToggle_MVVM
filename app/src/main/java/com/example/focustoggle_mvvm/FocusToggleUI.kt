@@ -1,6 +1,7 @@
 package com.example.focustoggle_mvvm
 
 import android.widget.ToggleButton
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -136,9 +137,11 @@ fun Middle(todo : List<Todos>, viewModel: ToggleViewModel) {
         Row(modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically) {
             Switch(
-                checked = true, onCheckedChange = {},
+                checked = showList,
+                         onCheckedChange = {showList = it
+                                           viewModel.fetchTodos()},
                 colors = SwitchDefaults.colors(
-                    checkedThumbColor = Color.White, checkedTrackColor = Color.Blue
+                    checkedThumbColor = Color.White, checkedTrackColor = Color.DarkGray
                 )
             )
 
@@ -156,7 +159,7 @@ fun Middle(todo : List<Todos>, viewModel: ToggleViewModel) {
         if (showList){
             LazyColumn() {
                 items(todo) { todo ->
-                    FocusList(todos = todo )
+                    FocusList(todos = todo)
                 }
             }
         }
