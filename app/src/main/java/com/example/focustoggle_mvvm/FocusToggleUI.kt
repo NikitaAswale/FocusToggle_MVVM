@@ -65,7 +65,7 @@ fun Top(){
     Row(modifier = Modifier.fillMaxWidth().padding(22.dp),
         verticalAlignment = Alignment.CenterVertically) {
         Icon(Icons.Default.List, contentDescription = "",
-            modifier = Modifier.size(25.dp)
+            modifier = Modifier.size(24.dp)
         )
 
         Spacer(Modifier.width(16.dp))
