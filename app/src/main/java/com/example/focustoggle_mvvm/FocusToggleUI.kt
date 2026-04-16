@@ -62,7 +62,7 @@ fun FocusToggle_UI(viewModel: ToggleViewModel = viewModel()){
 
 @Composable
 fun Top(){
-    Row(modifier = Modifier.fillMaxWidth().padding(22.dp),
+    Row(modifier = Modifier.fillMaxWidth().padding(24.dp),
         verticalAlignment = Alignment.CenterVertically) {
         Icon(Icons.Default.List, contentDescription = "",
             modifier = Modifier.size(24.dp)
