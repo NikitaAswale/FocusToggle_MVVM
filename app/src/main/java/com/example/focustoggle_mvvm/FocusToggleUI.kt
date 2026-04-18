@@ -68,7 +68,7 @@ fun Top(){
             modifier = Modifier.size(24.dp)
         )
 
-        Spacer(Modifier.width(16.dp))
+        Spacer(Modifier.width(24.dp))
 
         Text("Tasks",
             fontSize = 22.sp,
