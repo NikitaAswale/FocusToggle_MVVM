@@ -18,6 +18,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Home
@@ -64,7 +65,8 @@ fun FocusToggle_UI(viewModel: ToggleViewModel = viewModel()){
 fun Top(){
     Row(modifier = Modifier.fillMaxWidth().padding(24.dp),
         verticalAlignment = Alignment.CenterVertically) {
-        Icon(Icons.Default.List, contentDescription = "",
+        Icon(
+            Icons.AutoMirrored.Filled.List, contentDescription = "",
             modifier = Modifier.size(24.dp)
         )
 
@@ -79,9 +81,8 @@ fun Top(){
             horizontalArrangement = Arrangement.End) {
             Icon(Icons.Default.AccountBox, contentDescription = "", tint = Color.White,
                 modifier = Modifier.background(color = Color.Black, RoundedCornerShape(8.dp)
-                ).size(30.dp),
-
-                )
+                ).size(30.dp)
+            )
         }
     }
 }
