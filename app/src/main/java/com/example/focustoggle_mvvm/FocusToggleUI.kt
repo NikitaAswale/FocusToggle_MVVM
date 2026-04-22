@@ -170,7 +170,7 @@ fun Middle(todo : List<Todos>, viewModel: ToggleViewModel) {
 @Composable
 fun FocusList(todos: Todos){
     Card(modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = Color(0xFFE3F2FD)),
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFFFC107)),
         shape = RoundedCornerShape(10.dp),
 
         elevation = CardDefaults.cardElevation(4.dp)){
