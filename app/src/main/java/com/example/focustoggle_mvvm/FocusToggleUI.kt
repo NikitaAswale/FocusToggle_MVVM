@@ -126,7 +126,7 @@ fun Middle(todo : List<Todos>, viewModel: ToggleViewModel) {
             Spacer(Modifier.width(8.dp))
 
             Text(
-                "3 active goals remaining",
+                "4 active goals remaining",
                 fontSize = 18.sp,
                 color = Color.Gray
             )
