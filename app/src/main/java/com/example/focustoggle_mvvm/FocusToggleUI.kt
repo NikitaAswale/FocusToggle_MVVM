@@ -181,7 +181,7 @@ fun FocusList(todos: Todos){
 
             Column() {
                 Text("${todos.title}",
-                    fontSize = 20.sp,
+                    fontSize = 24.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.Black
                 )
