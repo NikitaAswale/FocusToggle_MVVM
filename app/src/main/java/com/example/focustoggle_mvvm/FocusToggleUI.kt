@@ -1,7 +1,5 @@
 package com.example.focustoggle_mvvm
 
-import android.widget.ToggleButton
-import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -54,7 +52,7 @@ fun FocusToggle_UI(viewModel: ToggleViewModel = viewModel()){
     Box(modifier = Modifier.fillMaxSize()){
         Column() {
             Top()
-            Spacer(Modifier.height(20.dp))
+            Spacer(Modifier.height(24.dp))
             Middle(TODOS, viewModel)
         }
         Bottom()
