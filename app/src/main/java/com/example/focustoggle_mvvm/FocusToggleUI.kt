@@ -1,7 +1,5 @@
 package com.example.focustoggle_mvvm
 
-import android.widget.ToggleButton
-import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
