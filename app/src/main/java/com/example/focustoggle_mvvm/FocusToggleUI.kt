@@ -186,7 +186,7 @@ fun FocusList(todos: Todos){
 
                 Spacer(Modifier.height(4.dp))
                 Box(modifier = Modifier
-                    .background(Color(0xFF673AB7), RoundedCornerShape(10.dp))
+                    .background(Color(0xFFFFEB3B), RoundedCornerShape(10.dp))
                     .padding(horizontal = 10.dp, vertical = 4.dp)){
                     Text("${todos.completed}",
                         fontSize = 16.sp,
