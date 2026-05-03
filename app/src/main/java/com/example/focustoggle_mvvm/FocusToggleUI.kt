@@ -213,7 +213,7 @@ fun Bottom() {
 
 
             Column(
-                Modifier.background(Color(0xFFFF5722), RoundedCornerShape(12.dp))
+                Modifier.background(Color(0xFF00087E), RoundedCornerShape(12.dp))
                     .padding(6.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
